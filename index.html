@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Farmer Market Rates</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header class="header">
+
+        <div class="logo">
+            🌾 FarmRates
+        </div>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#rates">Market Rates</a>
+            <a href="#about">About</a>
+        </nav>
+
+    </header>
+
+
+    <!-- HERO -->
+    <section class="hero" id="home">
+
+        <div class="hero-content">
+
+            <div class="badge">
+                🌱 GOVERNMENT MANDI DATA
+            </div>
+
+            <h1>
+                Current
+                <span>Farmer Market Rates</span>
+            </h1>
+
+            <p>
+                Check the latest available mandi prices for
+                agricultural commodities in Maharashtra.
+            </p>
+
+            <a href="#rates" class="btn">
+                Check Market Rates →
+            </a>
+
+        </div>
+
+
+        <div class="hero-visual">
+
+            <div class="market-box">
+
+                <div class="market-icon">
+                    🌾
+                </div>
+
+                <h3>
+                    Mandi Rates
+                </h3>
+
+                <p>
+                    Minimum • Modal • Maximum
+                </p>
+
+                <div class="rate-line"></div>
+
+                <div class="market-status">
+                    ● Government Data
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- MARKET RATES -->
+    <section class="rates-section" id="rates">
+
+        <div class="section-heading">
+
+            <span>
+                LIVE DATA FETCH
+            </span>
+
+            <h2>
+                Current Market Rates
+            </h2>
+
+            <p>
+                Select a district and crop to fetch the
+                latest available mandi price.
+            </p>
+
+        </div>
+
+
+        <!-- SEARCH -->
+        <div class="search-card">
+
+            <div class="form-group">
+
+                <label for="district">
+                    📍 District
+                </label>
+
+                <select id="district">
+
+                    <option value="">
+                        Select District
+                    </option>
+
+                    <option value="Kolhapur">
+                        Kolhapur
+                    </option>
+
+                    <option value="Pune">
+                        Pune
+                    </option>
+
+                    <option value="Nanded">
+                        Nanded
+                    </option>
+
+                    <option value="Sangli">
+                        Sangli
+                    </option>
+
+                    <option value="Satara">
+                        Satara
+                    </option>
+
+                </select>
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label for="commodity">
+                    🌾 Crop
+                </label>
+
+                <select id="commodity">
+
+                    <option value="">
+                        Select Crop
+                    </option>
+
+                    <option value="Onion">
+                        Onion
+                    </option>
+
+                    <option value="Tomato">
+                        Tomato
+                    </option>
+
+                    <option value="Potato">
+                        Potato
+                    </option>
+
+                    <option value="Wheat">
+                        Wheat
+                    </option>
+
+                    <option value="Soybean">
+                        Soybean
+                    </option>
+
+                    <option value="Cotton">
+                        Cotton
+                    </option>
+
+                </select>
+
+            </div>
+
+
+            <button id="searchBtn">
+                🔍 Get Current Rate
+            </button>
+
+        </div>
+
+
+        <!-- STATUS -->
+        <div id="status" class="status">
+            Select district and crop.
+        </div>
+
+
+        <!-- RESULTS -->
+        <div id="ratesContainer" class="rates-container"></div>
+
+    </section>
+
+
+    <!-- ABOUT -->
+    <section class="about" id="about">
+
+        <div class="section-heading">
+
+            <span>
+                ABOUT
+            </span>
+
+            <h2>
+                Market Price Information
+            </h2>
+
+        </div>
+
+
+        <div class="about-grid">
+
+            <div class="about-card">
+
+                <div class="about-icon">
+                    📉
+                </div>
+
+                <h3>
+                    Minimum Price
+                </h3>
+
+                <p>
+                    Lowest reported wholesale price
+                    for the selected commodity.
+                </p>
+
+            </div>
+
+
+            <div class="about-card">
+
+                <div class="about-icon">
+                    📊
+                </div>
+
+                <h3>
+                    Modal Price
+                </h3>
+
+                <p>
+                    Most commonly reported wholesale
+                    market price.
+                </p>
+
+            </div>
+
+
+            <div class="about-card">
+
+                <div class="about-icon">
+                    📈
+                </div>
+
+                <h3>
+                    Maximum Price
+                </h3>
+
+                <p>
+                    Highest reported wholesale price
+                    for the selected commodity.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer>
+
+        <h3>
+            🌾 FarmRates
+        </h3>
+
+        <p>
+            Farmer Current Market Rate System
+        </p>
+
+        <p class="source">
+            Source: Government of India Open Government Data Platform
+        </p>
+
+        <p class="copyright">
+            © 2026 FarmRates
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

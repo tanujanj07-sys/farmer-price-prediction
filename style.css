@@ -1,0 +1,621 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f5faf6;
+    color: #17351d;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+.header {
+    height: 72px;
+    padding: 0 7%;
+
+    background: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+    border-bottom: 1px solid #e1e9e2;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 800;
+    color: #18743a;
+}
+
+nav {
+    display: flex;
+    gap: 30px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #405646;
+    font-weight: 600;
+}
+
+nav a:hover {
+    color: #18743a;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+    min-height: 570px;
+    padding: 70px 7%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 50px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #edf9ee,
+            #d5efd9
+        );
+}
+
+.hero-content {
+    max-width: 650px;
+}
+
+.badge {
+    display: inline-block;
+
+    background: #d2eed7;
+    color: #18743a;
+
+    padding: 7px 15px;
+
+    border-radius: 30px;
+
+    font-size: 12px;
+
+    font-weight: 800;
+
+    letter-spacing: 1px;
+
+    margin-bottom: 20px;
+}
+
+.hero h1 {
+    font-size: clamp(42px, 6vw, 70px);
+
+    line-height: 1.05;
+
+    margin-bottom: 22px;
+}
+
+.hero h1 span {
+    display: block;
+    color: #20964c;
+}
+
+.hero p {
+    font-size: 18px;
+
+    color: #617363;
+
+    max-width: 580px;
+
+    margin-bottom: 30px;
+}
+
+.btn {
+    display: inline-block;
+
+    text-decoration: none;
+
+    background: #20964c;
+
+    color: white;
+
+    padding: 14px 24px;
+
+    border-radius: 9px;
+
+    font-weight: 700;
+}
+
+.btn:hover {
+    background: #146c35;
+}
+
+
+/* =========================
+   HERO CARD
+========================= */
+
+.hero-visual {
+    width: 400px;
+    height: 330px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.market-box {
+    width: 330px;
+
+    padding: 35px;
+
+    background: white;
+
+    border-radius: 25px;
+
+    text-align: center;
+
+    box-shadow:
+        0 25px 50px
+        rgba(39, 89, 46, 0.15);
+}
+
+.market-icon {
+    font-size: 70px;
+}
+
+.market-box h3 {
+    font-size: 25px;
+    color: #1d6032;
+}
+
+.market-box p {
+    color: #708074;
+}
+
+.rate-line {
+    height: 1px;
+
+    background: #e3e9e4;
+
+    margin: 20px 0;
+}
+
+.market-status {
+    color: #208e47;
+
+    font-size: 13px;
+
+    font-weight: bold;
+}
+
+
+/* =========================
+   RATES
+========================= */
+
+.rates-section {
+    padding: 90px 7%;
+}
+
+.section-heading {
+    text-align: center;
+
+    margin-bottom: 40px;
+}
+
+.section-heading span {
+    color: #20964c;
+
+    font-size: 13px;
+
+    font-weight: 800;
+
+    letter-spacing: 2px;
+}
+
+.section-heading h2 {
+    font-size: 40px;
+
+    color: #193c22;
+
+    margin: 8px 0;
+}
+
+.section-heading p {
+    color: #728074;
+}
+
+
+/* =========================
+   SEARCH
+========================= */
+
+.search-card {
+    max-width: 1000px;
+
+    margin: auto;
+
+    padding: 28px;
+
+    background: white;
+
+    border-radius: 18px;
+
+    display: grid;
+
+    grid-template-columns:
+        1fr 1fr auto;
+
+    gap: 18px;
+
+    align-items: end;
+
+    box-shadow:
+        0 12px 35px
+        rgba(44, 82, 48, 0.08);
+
+    border: 1px solid #e4ebe5;
+}
+
+.form-group label {
+    display: block;
+
+    margin-bottom: 7px;
+
+    font-size: 14px;
+
+    font-weight: 700;
+}
+
+select {
+    width: 100%;
+
+    padding: 13px;
+
+    border: 1px solid #d6e0d7;
+
+    border-radius: 8px;
+
+    background: #fbfdfb;
+
+    color: #29442f;
+
+    font-size: 14px;
+}
+
+#searchBtn {
+    padding: 13px 20px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    background: #20964c;
+
+    color: white;
+
+    font-weight: 700;
+
+    cursor: pointer;
+}
+
+#searchBtn:hover {
+    background: #146c35;
+}
+
+
+/* =========================
+   STATUS
+========================= */
+
+.status {
+    max-width: 1000px;
+
+    margin: 25px auto;
+
+    padding: 12px;
+
+    text-align: center;
+
+    color: #69766d;
+
+    font-size: 14px;
+}
+
+
+/* =========================
+   RESULT CARD
+========================= */
+
+.rates-container {
+    max-width: 1100px;
+
+    margin: 25px auto;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 20px;
+}
+
+.rate-card {
+    background: white;
+
+    padding: 25px;
+
+    border-radius: 16px;
+
+    border: 1px solid #e4ebe5;
+
+    box-shadow:
+        0 10px 30px
+        rgba(42, 78, 47, 0.07);
+}
+
+.rate-header {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    margin-bottom: 12px;
+}
+
+.rate-header h3 {
+    color: #1d6133;
+}
+
+.rate-date {
+    font-size: 11px;
+
+    color: #7a887d;
+}
+
+.rate-location {
+    color: #748078;
+
+    font-size: 13px;
+
+    margin-bottom: 20px;
+}
+
+.price-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 8px;
+}
+
+.price-box {
+    padding: 13px 5px;
+
+    text-align: center;
+
+    border-radius: 9px;
+
+    background: #f4f8f4;
+}
+
+.price-box span {
+    display: block;
+
+    font-size: 11px;
+
+    color: #718077;
+
+    margin-bottom: 5px;
+}
+
+.price-box strong {
+    font-size: 15px;
+
+    color: #1e6c38;
+}
+
+.modal-price {
+    background: #e3f4e6;
+}
+
+
+/* =========================
+   ERROR
+========================= */
+
+.error-box {
+    grid-column: 1 / -1;
+
+    background: #fff5f5;
+
+    border: 1px solid #f0cccc;
+
+    padding: 25px;
+
+    border-radius: 12px;
+
+    text-align: center;
+
+    color: #a33a3a;
+}
+
+.error-box h3 {
+    margin-bottom: 8px;
+}
+
+
+/* =========================
+   ABOUT
+========================= */
+
+.about {
+    padding: 80px 7%;
+
+    background: #eef7ef;
+}
+
+.about-grid {
+    max-width: 1100px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 20px;
+}
+
+.about-card {
+    background: white;
+
+    padding: 30px;
+
+    text-align: center;
+
+    border-radius: 16px;
+}
+
+.about-icon {
+    font-size: 40px;
+
+    margin-bottom: 10px;
+}
+
+.about-card h3 {
+    margin-bottom: 8px;
+}
+
+.about-card p {
+    color: #718078;
+
+    font-size: 14px;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    padding: 40px 20px;
+
+    background: #15391e;
+
+    color: white;
+
+    text-align: center;
+}
+
+footer h3 {
+    margin-bottom: 5px;
+}
+
+footer p {
+    color: #b9cdbd;
+}
+
+.source {
+    margin-top: 12px;
+
+    font-size: 13px;
+}
+
+.copyright {
+    margin-top: 15px;
+
+    font-size: 12px;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 900px) {
+
+    .hero {
+        flex-direction: column;
+
+        text-align: center;
+    }
+
+    .hero p {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .search-card {
+        grid-template-columns: 1fr;
+    }
+
+    .rates-container {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .about-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .header {
+        padding: 0 5%;
+    }
+
+    nav {
+        gap: 10px;
+    }
+
+    nav a {
+        font-size: 12px;
+    }
+
+    .hero {
+        padding: 55px 5%;
+    }
+
+    .hero-visual {
+        width: 100%;
+    }
+
+    .market-box {
+        width: 300px;
+    }
+
+    .rates-section,
+    .about {
+        padding: 60px 5%;
+    }
+
+    .section-heading h2 {
+        font-size: 30px;
+    }
+
+    .rates-container {
+        grid-template-columns: 1fr;
+    }
+}
